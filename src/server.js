@@ -3,6 +3,7 @@ const cors = require("cors");
 const { upload, handleUploadError } = require("../config/multer");
 const { loadModel } = require("./inference");
 const { predictFunction, historyPredictFunction } = require("./controller/predictController");
+require('dotenv').config();
 
 const app = express();
 
